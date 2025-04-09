@@ -1,11 +1,11 @@
-﻿namespace Gifthub.Domain.Users.Interfaces;
+﻿namespace Gifthub.Domain.Users.Interfaces.Services;
 
 public interface IUsersService
 {
-    Task<User?> GetUsersAsync();
-    Task<User?> GetUserByIdAsync(Guid id);
-    Task<User?> GetUserByNameAsync(string name);
-    Task<User?> GetUserByEmailAsync(string email);
-    Task<Guid> AddNewUserAsync(string name, string email, string password);
-    Task<User?> UpdateUserAsync(User user, string newName);
+    Task<User?> GetByIdAsync(Guid id);
+    Task<User?> GetByNameAsync(string name);
+    Task<User?> GetByEmailAsync(string email);
+    Task<Guid> AddAsync(string name, string email, string password);
+    Task<User?> UpdateAsync(User user, string newName);
+    Task<IReadOnlyList<User>> GetAllUsersAsync();
 } 

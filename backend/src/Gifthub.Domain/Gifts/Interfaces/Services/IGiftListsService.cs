@@ -1,4 +1,4 @@
-﻿namespace Gifthub.Domain.Gifts.Interfaces;
+﻿namespace Gifthub.Domain.Gifts.Interfaces.Services;
 
 public interface IGiftListsService
 {
@@ -7,4 +7,5 @@ public interface IGiftListsService
     Task<GiftList?> GetByIdAsync(Guid id);
     Task UpdateAsync(string newName, string newDescription);
     Task DeleteAsync(Guid id);
+    Task<IReadOnlyList<Gift>> GetAllAsync();
 }
