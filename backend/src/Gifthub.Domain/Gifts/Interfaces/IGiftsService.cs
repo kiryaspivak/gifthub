@@ -1,6 +1,6 @@
-﻿using Gifthub.Domain.Entities;
+﻿using Gifthub.Domain.Gifts.Entities;
 
-namespace Gifthub.Domain.Interfaces;
+namespace Gifthub.Domain.Gifts.Interfaces;
 
 public interface IGiftsService
 {

@@ -1,4 +1,4 @@
-﻿namespace Gifthub.Domain.Entities;
+﻿namespace Gifthub.Domain.Users.Entities;
 
 public class User
 {
