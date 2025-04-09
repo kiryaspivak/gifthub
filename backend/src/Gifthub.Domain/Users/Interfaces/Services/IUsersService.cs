@@ -1,6 +1,4 @@
-﻿using Gifthub.Domain.Users.Entities;
-
-namespace Gifthub.Domain.Users.Interfaces;
+﻿namespace Gifthub.Domain.Users.Interfaces;
 
 public interface IUsersService
 {
